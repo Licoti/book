@@ -1,0 +1,12 @@
+_site
+.sass-cache
+.jekyll-cache
+.jekyll-metadata
+vendor
+.idea
+# Mac OS related files
+.DS_Store
+build/*
+# Dependency directories
+node_modules
+jspm_packages

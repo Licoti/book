@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+
+    <title>Titre</title>
+  </head>
+
+  <body class="readme">
+<!--  <ul>
+    <li>Récupérer le fichier JSON de google takeout (on ne va garder que les couleurs et les before before_excerpt), c'est le fichier Voltaire.json</li>
+    <li>Telecharger en html la sortie des notes sur Google Drive (la fonction _dynnamicNoteHtml va créer un JSON à partir de ce fichier (visible dans commentairesurXXX.html))</li>
+    <li>Remplacer cet espace " " dans le fichier de takeout par un espace simple - -</li>
+    <li>Vérifier qu'il y a toutes les notes dans indexDrive.html</li>
+    <li>Aller dans voltaire.html (c'est le final)</li>
+  </ul>-->
+<h2>Version n°2</h2>
+<p>Suite à une modification de chez google l'export takeout est maintenant encodé en BASE64. <strong>Donc on ne s'en sert plus</strong>, tout se fait dans _dynnamicNoteHtml</p>
+<ol>
+  <li>Télécharger le drive en HTML</li>
+  <li>Le mettre dans le dossier /asset, aller dessus, et dans la console copier le JSON généré</li>
+  <li>Coller le json dans un  nouveau dossier lié au livre (final.json)</li>
+</ol>
+
+  <ol>
+    <li>Télécharger le drive en HTML : supprimer toute la partie haute en doublon et ne garder que le texte après "Toutes vos annoations" - ce fichier est utile car contrairement au takeout les notes ici ne sont pas tronquées</li>
+    <li>Aller sur <strong>indexDrive.html</strong> et copier/coller le JSON dans <strong>drive.json</strong> : Le nombre de donnée dans le json doit dorrespondre avec les notes <i>(fonction _dynnamicNoteHtml)</i></li>
+    <li>Récupérer le takeout en Json : mettre dans le fichier <strong>takeout.json</strong> (enlever le haut et le bas du json pour qu'il soit correctement lu) - ce fichier est utile pour prendre la couleur et les notes avant et après</li>
+    <li><i>Note : il se peut que dans le takeout.json il y ait des problèmes :</i>
+      <ol>
+        <li>problèmes d'espace : dans ce cas remplacer l'espace google " " par un espace normal</li>
+        <li>Remplacer les <strong>"\n"</strong> par ""</li>
+      </ol>
+    </li>
+    <li>Pour terminer : Copier / coller le json qui sort dans la console de index.html dans <strong>final.json</strong> <i>(normalement le nombre de data devrait être le même que ceux du drive.json)</i></li>
+    <li>La sortie finale se trouve dans un fichier html que vous aurez créée avec une classe html <strong>final</strong></li>
+  </ol>
+
+    <main role="main">
+      <h1>JSON Google Takeout</h1>
+      <h2>Ici les notes viennent de Takeout et sont triés par les dernières ajoutées dans le livre</h2>
+      <ul class="note"></ul>
+    </main>
+  </body>
+</html>

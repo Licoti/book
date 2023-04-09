@@ -1,0 +1,19 @@
+$material-icons-font-path: '~material-icons/iconfont/';
+$material-icons-font-display: inline-block;
+
+@import '~material-icons/iconfont/outlined.css';
+@import '~material-icons/iconfont/filled.css';
+
+//Core files
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/variables";
+@import "config/variables";
+@import "config/custom-variables";
+
+@import '0-base/html-base';
+
+//Bootstrap
+@import "~bootstrap/scss/bootstrap";
+
+//fonts
+@import 'fonts/publicsans';

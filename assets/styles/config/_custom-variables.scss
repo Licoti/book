@@ -1,0 +1,17 @@
+// Font weight
+$font-weight-semibold:              600;
+
+$enedis-200: #F7FBEF;
+$enedis-300: #D5EBAD;
+$enedis-400: #B5DC6F;
+$enedis-500: #96CD32;
+$enedis-600: #698F23;
+$enedis-700: #3C5214;
+$enedis: (
+        "200": $enedis-200,
+        "300": $enedis-300,
+        "400": $enedis-400,
+        "500": $enedis-500,
+        "600": $enedis-600,
+        "700": $enedis-700
+);
