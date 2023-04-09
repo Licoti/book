@@ -1,4 +1,4 @@
-# Site mediation (webpack)
+# Book notes (webpack)
 
 Minimum node version : v14.15.5 (npm v6.14.11)
 
